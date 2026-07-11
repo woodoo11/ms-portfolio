@@ -6,10 +6,22 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Minhas Sajjan • Portfolio</title>
 	</head>
 	<body>
-		<slot />
+		<header>
+			<div class="site-header">
+				<a class="brand" href="/">Minhas Sajjan</a>
+				<nav>
+					<a href="/">Home</a>
+					<a href="/about">About</a>
+					<a href="/projects">Projects</a>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<slot />
+		</main>
 	</body>
 </html>
 
@@ -19,5 +31,51 @@
 		margin: 0;
 		width: 100%;
 		height: 100%;
+		font-family: system-ui, sans-serif;
+		color: #111;
+		background: #f7f9ff;
+	}
+
+	body {
+		min-height: 100vh;
+	}
+
+	headers {
+	}
+
+	.site-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 2rem;
+		border-bottom: 1px solid #e5e7eb;
+		background: white;
+		position: sticky;
+		top: 0;
+		z-index: 10;
+	}
+
+	.brand {
+		font-weight: 700;
+		color: #111827;
+		text-decoration: none;
+		font-size: 1.1rem;
+	}
+
+	nav a {
+		margin-left: 1rem;
+		color: #2563eb;
+		text-decoration: none;
+		font-weight: 500;
+	}
+
+	nav a:hover {
+		text-decoration: underline;
+	}
+
+	main {
+		padding: 2rem 1.5rem;
+		max-width: 900px;
+		margin: 0 auto;
 	}
 </style>

@@ -1,0 +1,74 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<section>
+		<h1>Projects</h1>
+		<p>These are learning projects I've built while exploring web development and digital training.</p>
+
+		<div class="project-card">
+			<h2>Portfolio Website</h2>
+			<p>
+				A personal website built with Astro and deployed to Cloudflare Pages. This is the project you're viewing now.
+			</p>
+			<a href="https://github.com/woodoo11/ms-portfolio" target="_blank">View on GitHub</a>
+		</div>
+
+		<div class="project-card">
+			<h2>SAP Learning Materials</h2>
+			<p>
+				Training content and learning solutions for SAP Enable Now, focused on improving user adoption and knowledge retention.
+			</p>
+			<a href="https://github.com/woodoo11" target="_blank">View my GitHub</a>
+		</div>
+
+		<div class="project-card">
+			<h2>Learning Notes</h2>
+			<p>
+				Ongoing notes and small experiments documenting what I'm learning in web development, Git, and deployment.
+			</p>
+			<a href="https://github.com/woodoo11" target="_blank">View my GitHub</a>
+		</div>
+	</section>
+
+	<style>
+		section {
+			background: white;
+			border-radius: 16px;
+			padding: 2rem;
+			box-shadow: 0 20px 40px rgba(15, 23, 42, 0.05);
+		}
+
+		h1 {
+			font-size: 2.5rem;
+			margin-bottom: 1rem;
+		}
+
+		p {
+			font-size: 1.05rem;
+			line-height: 1.8;
+		}
+
+		.project-card {
+			margin-top: 1.5rem;
+			padding: 1.5rem;
+			border: 1px solid #e5e7eb;
+			border-radius: 12px;
+		}
+
+		.project-card h2 {
+			margin-top: 0;
+		}
+
+		.project-card a {
+			display: inline-block;
+			margin-top: 1rem;
+			color: #2563eb;
+			text-decoration: none;
+		}
+
+		.project-card a:hover {
+			text-decoration: underline;
+		}
+	</style>
